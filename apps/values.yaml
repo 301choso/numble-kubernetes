@@ -2,6 +2,6 @@ repoURL: https://github.com/301choso/numble-kubernetes
 
 apps:
   - name: argo-cd
-    namespace: default
+    namespace: argocd
   - name: nginx
     namespace: default
