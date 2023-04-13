@@ -16,3 +16,4 @@ spec:
     path: {{ .name }}
     repoURL: {{ $.Values.repoURL }}
     targetRevision: HEAD
+{{ end }}
