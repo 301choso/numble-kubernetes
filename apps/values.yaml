@@ -1,4 +1,4 @@
-repoURL: https://github.com/301choso/numble-kubernetes
+repoURL: git@github.com:301choso/numble-kubernetes.git
 
 apps:
   - name: argo-cd
