@@ -1,20 +1,22 @@
 repoURL: git@github.com:301choso/numble-kubernetes.git
 
 apps:
-  - name: argo-cd
+  - name: argocd
     namespace: argocd
   - name: nginx
     namespace: default
   - name: eck-operator
-    namespace: default
+    namespace: elastic
     ignoreDifferences:
       - group: admissionregistration.k8s.io
         kind: ValidatingWebhookConfiguration
         jqPathExpressions:
           - .webhooks[]?.clientConfig.caBundle
   - name: eck-elasticsearch
-    namespace: default
+    namespace: elastic
   - name: eck-kibana
-    namespace: default
+    namespace: elastic
   - name: eck-beats
-    namespace: default
+    namespace: elastic
+  - name: prometheus
+    namespace: prometheus  
